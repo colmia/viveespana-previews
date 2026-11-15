@@ -8,8 +8,8 @@
   <link rel="preload" href="/viveespana-previews/pr-27/assets/nexa-heavy-C4LswGRq.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="/viveespana-previews/pr-27/assets/mascot-message-sXpAcl8-.webp" as="image" type="image/webp">
   <link rel="preload" href="/viveespana-previews/pr-27/assets/hero-phone-DnVt1GkW.webp" as="image" type="image/webp">
-  <script type="module" crossorigin src="/viveespana-previews/pr-27/assets/vive-espana-v1-C1QyLFfK.js"></script>
-  <link rel="stylesheet" crossorigin href="/viveespana-previews/pr-27/assets/vive-espana-v1-DQQ6-dNE.css">
+  <script type="module" crossorigin src="/viveespana-previews/pr-27/assets/vive-espana-v1-FXEFM6K4.js"></script>
+  <link rel="stylesheet" crossorigin href="/viveespana-previews/pr-27/assets/vive-espana-v1-DF88l4YO.css">
 </head>
 <body>
   <header class="topbar shell">
@@ -36,11 +36,7 @@
       <div class="hero-visual" aria-label="Vive y el panel Mi camino a España">
         <span class="hero-orbit" aria-hidden="true"></span>
         <img class="mascot" src="/viveespana-previews/pr-27/assets/mascot-message-sXpAcl8-.webp" width="1295" height="1214" fetchpriority="high" alt="Hazlo por tu cuenta, pero con ayuda para no equivocarte">
-        <div class="desktop-device">
-          <span class="device-camera" aria-hidden="true"></span>
-          <img src="/viveespana-previews/pr-27/assets/panel-progress-B_Rdbfbq.webp" width="1312" height="1199" alt="Panel Mi camino a España">
-          <i aria-hidden="true"></i>
-        </div>
+        <img class="desktop-hero-laptop" src="/viveespana-previews/pr-27/assets/desktop-dashboard-6ySr8w82.webp" width="1655" height="950" fetchpriority="high" alt="Panel de Vive España mostrado en un ordenador portátil">
         <img class="hero-phone" src="/viveespana-previews/pr-27/assets/hero-phone-DnVt1GkW.webp" width="1106" height="1422" fetchpriority="high" alt="Panel Mi camino a España">
       </div>
 
@@ -79,7 +75,8 @@
       <span class="section-kicker">TU ESPACIO</span>
       <h2 id="panel-title">Así es tu panel por dentro</h2>
       <p>Un espacio diseñado para que avances<br>con seguridad y sin confusión.</p>
-      <div class="carousel" tabindex="0" aria-roledescription="carrusel" aria-label="Pantallas del panel">
+      <ul class="panel-points"><li>Tu progreso, siempre visible.</li><li>Tareas organizadas por etapas.</li><li>Todos tus documentos en un solo lugar.</li></ul>
+      <div class="carousel mobile-carousel" data-carousel tabindex="0" aria-roledescription="carrusel" aria-label="Pantallas del panel en móvil">
         <div class="track">
           <figure><img src="/viveespana-previews/pr-27/assets/panel-progress-B_Rdbfbq.webp" width="1312" height="1199" decoding="async" alt="Panel de progreso"></figure>
           <figure><img src="/viveespana-previews/pr-27/assets/panel-route-BgYXffEi.webp" width="1312" height="1199" decoding="async" alt="Panel de ruta"></figure>
@@ -87,8 +84,22 @@
           <figure><img src="/viveespana-previews/pr-27/assets/panel-chat-DNFTvCPd.webp" width="1312" height="1199" decoding="async" alt="Chat con Vive"></figure>
           <figure><img src="/viveespana-previews/pr-27/assets/panel-complete-CXi4XQE4.webp" width="1312" height="1199" decoding="async" alt="Ruta completada"></figure>
         </div>
+        <div class="dots" aria-label="Elegir pantalla móvil"></div>
       </div>
-      <div class="dots" aria-label="Elegir pantalla"></div>
+      <div class="carousel desktop-carousel" data-carousel tabindex="0" aria-roledescription="carrusel" aria-label="Pantallas del panel en ordenador">
+        <div class="track">
+          <figure><img src="/viveespana-previews/pr-27/assets/desktop-dashboard-6ySr8w82.webp" width="1655" height="950" decoding="async" alt="Panel principal de Vive España en ordenador"></figure>
+          <figure><img src="/viveespana-previews/pr-27/assets/desktop-route-setup-DU5_CvV8.webp" width="1655" height="950" decoding="async" alt="Configuración de la ruta personalizada"></figure>
+          <figure><img src="/viveespana-previews/pr-27/assets/desktop-visa-DHPQ6YZv.webp" width="1655" height="950" decoding="async" alt="Seguimiento del visado de estudiante"></figure>
+          <figure><img src="/viveespana-previews/pr-27/assets/desktop-complete-DWvSXntD.webp" width="1655" height="950" decoding="async" alt="Panel de proceso completado"></figure>
+          <figure><img src="/viveespana-previews/pr-27/assets/desktop-vive-route-DHR2dXYv.webp" width="1536" height="1024" decoding="async" alt="Vive guiando la ruta del estudiante"></figure>
+          <figure><img src="/viveespana-previews/pr-27/assets/desktop-vive-university-YYWS1mfU.webp" width="1655" height="950" decoding="async" alt="Vive informando sobre una universidad"></figure>
+          <figure><img src="/viveespana-previews/pr-27/assets/desktop-vive-checklist-DJc5gEU4.webp" width="1655" height="950" decoding="async" alt="Vive preparando una checklist personalizada"></figure>
+        </div>
+        <button class="carousel-arrow carousel-prev" type="button" data-carousel-prev aria-label="Pantalla anterior">←</button>
+        <button class="carousel-arrow carousel-next" type="button" data-carousel-next aria-label="Pantalla siguiente">→</button>
+        <div class="dots" aria-label="Elegir pantalla de ordenador"></div>
+      </div>
     </section>
 
     <section class="assistant shell" id="vive" aria-label="Tú das los pasos. Vive te guía.">
