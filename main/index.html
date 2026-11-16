@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#ffffff">
+  <meta name="experiment-events-endpoint" content="">
   <title>Vive España · Tu camino a España</title>
   <link rel="preload" href="/viveespana-previews/main/assets/nexa-heavy-C4LswGRq.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="/viveespana-previews/main/assets/mascot-message-sXpAcl8-.webp" as="image" type="image/webp">
   <link rel="preload" href="/viveespana-previews/main/assets/hero-phone-DnVt1GkW.webp" as="image" type="image/webp">
-  <script type="module" crossorigin src="/viveespana-previews/main/assets/vive-espana-v1-COu3WqBZ.js"></script>
+  <script type="module" crossorigin src="/viveespana-previews/main/assets/vive-espana-v1-DDWYqT_g.js"></script>
   <link rel="stylesheet" crossorigin href="/viveespana-previews/main/assets/vive-espana-v1-CIurudej.css">
 </head>
 <body>
@@ -20,7 +21,7 @@
       <a href="#documentos">Documentos</a>
       <a href="#vive">Vive</a>
     </nav>
-    <a class="header-cta" href="#precio">Quiero empezar ahora <span>→</span></a>
+    <a class="header-cta" href="#precio" data-track-cta="hero" data-track-id="header_cta">Quiero empezar ahora <span>→</span></a>
     <button class="menu" aria-label="Ir al acceso"><span></span><span></span><span></span></button>
   </header>
 
@@ -31,7 +32,7 @@
         <h1>¿Quieres estudiar<br>en España y no sabes<br>por dónde empezar?</h1>
         <svg class="marker" viewBox="0 0 360 18" aria-hidden="true"><path d="M5 13C99 2 256 1 354 14"/></svg>
         <p class="hero-copy">Organiza tu proceso con una plataforma que te guía, te da claridad y te acompaña en cada paso.</p>
-        <a class="cta hero-desktop-cta" href="#precio">Quiero empezar ahora <span>→</span></a>
+        <a class="cta hero-desktop-cta" href="#precio" data-track-cta="hero" data-track-id="hero_desktop_cta">Quiero empezar ahora <span>→</span></a>
       </div>
       <div class="hero-visual" aria-label="Vive y el panel Mi camino a España">
         <span class="hero-orbit" aria-hidden="true"></span>
@@ -54,7 +55,7 @@
           <h3>Todo en<br>un lugar</h3><p>Trámites, documentos,<br>plazos y recursos.</p>
         </article>
       </div>
-      <a class="cta" href="#precio">Quiero empezar ahora <span>→</span></a>
+      <a class="cta" href="#precio" data-track-cta="hero" data-track-id="hero_mobile_cta">Quiero empezar ahora <span>→</span></a>
     </section>
 
     <section class="steps shell" id="ruta">
@@ -76,7 +77,7 @@
       <h2 id="panel-title">Así es tu panel por dentro</h2>
       <p>Un espacio diseñado para que avances<br>con seguridad y sin confusión.</p>
       <ul class="panel-points"><li>Tu progreso, siempre visible.</li><li>Tareas organizadas por etapas.</li><li>Todos tus documentos en un solo lugar.</li></ul>
-      <div class="carousel mobile-carousel" data-carousel tabindex="0" aria-roledescription="carrusel" aria-label="Pantallas del panel en móvil">
+      <div class="carousel mobile-carousel" data-carousel data-carousel-id="panel_mobile" tabindex="0" aria-roledescription="carrusel" aria-label="Pantallas del panel en móvil">
         <div class="track">
           <figure><img src="/viveespana-previews/main/assets/panel-progress-B_Rdbfbq.webp" width="1312" height="1199" decoding="async" alt="Panel de progreso"></figure>
           <figure><img src="/viveespana-previews/main/assets/panel-route-BgYXffEi.webp" width="1312" height="1199" decoding="async" alt="Panel de ruta"></figure>
@@ -86,7 +87,7 @@
         </div>
         <div class="dots" aria-label="Elegir pantalla móvil"></div>
       </div>
-      <div class="carousel desktop-carousel" data-carousel tabindex="0" aria-roledescription="carrusel" aria-label="Pantallas del panel en ordenador">
+      <div class="carousel desktop-carousel" data-carousel data-carousel-id="panel_desktop" tabindex="0" aria-roledescription="carrusel" aria-label="Pantallas del panel en ordenador">
         <div class="track">
           <figure><img src="/viveespana-previews/main/assets/desktop-dashboard-6ySr8w82.webp" width="1655" height="950" decoding="async" alt="Panel principal de Vive España en ordenador"></figure>
           <figure><img src="/viveespana-previews/main/assets/desktop-route-setup-DU5_CvV8.webp" width="1655" height="950" decoding="async" alt="Configuración de la ruta personalizada"></figure>
@@ -123,12 +124,12 @@
       </div>
     </section>
 
-    <section class="price shell" id="precio">
+    <section class="price shell" id="precio" data-track-view="price_view">
       <span class="section-kicker">EMPIEZA AHORA</span>
       <h2>Acceso completo<br>al panel</h2>
-      <div class="price-row"><b>99 €</b><span>Pago único</span></div>
+      <div class="price-row"><b data-experiment-price>99 €</b><span>Pago único</span></div>
       <ul><li>Todo el proceso, de principio a fin</li><li>Asistente inteligente (Vive)</li><li>Checklists, recursos y plantillas</li><li>Seguimiento de tu avance</li><li>Acceso inmediato</li></ul>
-      <a class="cta" href="#">Quiero acceder ahora <span>→</span></a>
+      <a class="cta" href="#" data-track-cta="purchase-intent">Quiero acceder ahora <span>→</span></a>
     </section>
 
     <section class="faq shell">
